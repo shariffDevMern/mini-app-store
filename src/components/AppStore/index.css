@@ -48,7 +48,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-  
+    
+
     justify-content: center;
     align-items: center;
   }
@@ -63,6 +64,8 @@
     align-items: center;
   }
   .apps-section {
+    height:300px;
+    overflow-y:scroll;
     list-style-type: none;
     padding-left: 0px;
     display: flex;
@@ -73,4 +76,19 @@
     max-width: 800px;
     flex-wrap: wrap;
   }
+  .apps-section::-webkit-scrollbar {
+
+    width: 4px;
+}
+
+.apps-section::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+.apps-section::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 100px;
+}
+
   
